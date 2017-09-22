@@ -1,4 +1,8 @@
-<!-- Please only file bugs with FoundationPress on GitHub. If you've got an issue with the Foundation framework itself, please file the bug in the Foundation repository: https://github.com/zurb/foundation-sites. If you've got a more general question about how to use FoundationPress, please use the Gitter chatroom: https://gitter.im/olefredrik/FoundationPress -->
+<!-- Found an error in FoundationPress? Great, please let us know! If you use this template and fill in the blanks in the form below, it will be easier to understand how the error can be fixed.
+
+Please note that issues regarding conflicts with third party WordPress plugins, are not supported in FoundationPress, and will be closed.
+
+For general questions about how to use FoundationPress, please use the Gitter chatroom: https://gitter.im/olefredrik/FoundationPress -->
 
 **How can this bug be reproduced?**
 
@@ -13,7 +17,8 @@
 **Please List the Following:**
 * OS & version:
 * Node version (node -v) [Node v4+ is required] :
-* Foundation version (bower list) :
+* FoundationPress version (see line 3 in package.json):
+* Foundation version (see dependencies in package.json) :
 
 **Include Test Case** (if applicable):  
 Give us a link to a CodePen or JSFiddle that recreates the issue.

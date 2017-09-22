@@ -4,7 +4,7 @@ Template Name: Front
 */
 get_header(); ?>
 
-<header id="front-hero" role="banner">
+<header class="front-hero" role="banner">
 	<div class="marketing">
 		<div class="tagline">
 			<h1><?php bloginfo( 'name' ); ?></h1>
@@ -12,13 +12,9 @@ get_header(); ?>
 			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
 		</div>
 
-		<div id="watch">
-			<section id="stargazers">
-				<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-			</section>
-			<section id="twitter">
-				<a href="https://twitter.com/olefredrik">@olefredrik</a>
-			</section>
+		<div class="watch">
+			<span id="stargazers"><a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a></span>
+			<span id="twitter"><a href="https://twitter.com/olefredrik">@olefredrik</a></span>
 		</div>
 	</div>
 
@@ -35,7 +31,14 @@ get_header(); ?>
 				<?php the_content(); ?>
 			</div>
 			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+				<?php
+					wp_link_pages(
+						array(
+							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
+							'after'  => '</p></nav>',
+						)
+					);
+				?>
 				<p><?php the_tags(); ?></p>
 			</footer>
 			<?php do_action( 'foundationpress_page_before_comments' ); ?>
@@ -61,27 +64,27 @@ get_header(); ?>
 	</header>
 
 	<div class="semantic">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/semantic.svg" alt="semantic">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/semantic.svg" alt="semantic">
 		<h3>Semantic</h3>
 		<p>Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
 	</div>
 
 	<div class="responsive">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/responsive.svg" alt="responsive">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/responsive.svg" alt="responsive">
 		<h3>Responsive</h3>
 		<p>You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.</p>
 
 	</div>
 
 	<div class="customizable">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/customizable.svg" alt="customizable">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/customizable.svg" alt="customizable">
 		<h3>Customizable</h3>
 		<p>You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more.</p>
 
 	</div>
 
 	<div class="professional">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/professional.svg" alt="professional">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/demo/professional.svg" alt="professional">
 		<h3>Professional</h3>
 		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
 	</div>
